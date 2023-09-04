@@ -1,0 +1,149 @@
+#titre{
+	text-align : center;
+}
+
+main{
+	text-align : center;
+	margin: 10 200px;"	
+}
+
+.image-container {
+  position: relative;
+  display: inline-block; 
+}
+
+.overlay {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  width: 450px;
+  height: 88%;
+  background-color: rgba(245, 245, 245, 1); 
+}
+
+.image-container img {
+  margin-left: 400px; 
+}
+
+.image-fond {
+  overflow: hidden; /* Cache tout contenu dépassant les dimensions du conteneur */
+}
+
+.background-image {
+  width: 100%; /* Ajustez cette valeur pour définir la largeur souhaitée */
+  height: 700px; /* Ajustez cette valeur pour définir la hauteur souhaitée */
+  background-image: url("arriere_plan4.jpg"); /* Chemin vers l'image d'arrière-plan */
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
+  background-position: center; /* Centre l'image d'arrière-plan */
+  height: 100vh; /* Ajuste la hauteur du conteneur pour remplir tout l'écran */
+  
+}
+  
+
+.background-image img {
+  width: 100%; /* Permet à l'image de remplir le conteneur */
+  height: 100%; /* Permet à l'image de remplir le conteneur */
+  image-rendering: optimizeQuality; /* Améliore la qualité de l'image agrandie (uniquement sur certains navigateurs) */
+}
+
+.background-image p {
+  margin-left: 10px; /* Déplacer le texte de 10 pixels vers la gauche */
+}
+
+
+.images-miniatures {
+  margin: 0 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thumbnail {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  overflow: hidden; /* Cache les parties de l'image qui dépassent du cercle */
+  border-radius: 50%; /* Transforme le conteneur en un cercle */
+  background-color: white; /* Couleur du cercle blanc */
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 100%;
+}
+
+.thumbnail:nth-child(2) img {
+  width: 170px; /* Ajustez la largeur de la deuxième image */
+  height: 120px; /* Réduire la taille du cercle blanc de la première image */
+  left: 40%; /* Décalage vers la gauche pour la deuxième image */
+}
+
+.thumbnail:nth-child(1) img {
+  left: 52%; /* Décalage vers la droite pour la première image */
+  width: 140px; /* Réduire la taille du cercle blanc de la première image */
+  
+}
+
+.thumbnail:nth-child(3) {
+  border: none;
+  right: 55px; /* Déplacer vers la droite */
+}
+
+.thumbnail:nth-child(1) {
+  right: -60px; /* Déplacer vers la droite */
+}
+
+.surlignement {
+    background-color: white; /* Couleur de fond que vous souhaitez */
+	font-style: italic;
+}	
+
+.texteImage1 {
+	margin-left: -660px; 
+	font-size: 18px;
+	line-height: 0.8;
+}
+
+.texteImage2 {
+	margin-top:-275px;
+	font-size: 18px;
+	line-height: 0.888;
+}
+
+.texteImage3 {
+	margin-left: 660px; 
+	font-size: 18px;
+	line-height: 0.8;
+	margin-top:-210px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textes-sous-images-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Divise l'espace en trois colonnes égales */
+	grid-gap: 10px; /* Espacement entre les éléments de la grille */
+	text-align: center; /* Centre le texte à l'intérieur de chaque colonne */
+}
+
+.texte-image-miniature {
+	font-size: 16px; /* Taille de police */
+}
+
+.texte-image-miniature:nth-child(1) {
+    margin-left: 310px; /* Ajustez la valeur selon votre besoin */
+}
+	
+.texte-image-miniature:nth-child(3) {
+    position: relative;
+    left: -180px;
+}
